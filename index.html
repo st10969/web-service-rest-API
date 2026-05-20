@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracker Videogiochi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>La mia Libreria</h1>
+
+        <form id="form-gioco">
+            <div class="form-group">
+                <label for="titolo">Titolo del Gioco:</label>
+                <input type="text" id="titolo" required placeholder="Es. Uncharted 4">
+            </div>
+            
+            <div class="form-group">
+                <label for="piattaforma">Piattaforma:</label>
+                <select id="piattaforma" required>
+                    <option value="">Seleziona...</option>
+                    <option value="PS5">PlayStation 5</option>
+                    <option value="PS4">PlayStation 4</option>
+                    <option value="PC">PC</option>
+                </select>
+            </div>
+            
+            <button type="submit">Aggiungi Gioco</button>
+        </form>
+
+        <h2>Giochi Salvati</h2>
+
+        <!-- Pulsante per svuotare la lista dal DOM (reset visivo) -->
+        <button id="btn-svuota" class="btn-secondary">Svuota lista</button>
+
+        <ul id="lista-giochi">
+            <!-- I giochi verranno inseriti qui da JavaScript -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
